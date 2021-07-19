@@ -12,3 +12,5 @@ I have implemented several animation functions and collision detection that will
 help you understand how games work.
 You can also download the Game in the App Store or Google Play and try it.
 Just search for Bxreakout.
+
+[alt text](https://www.b4x.com/android/forum/attachments/icon_small-png.115989/?raw=true)
