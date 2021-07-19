@@ -1,0 +1,104 @@
+﻿AppType=JavaFX
+Build1=Default,b4j.example
+File1=exit.png
+File10=set0.pack
+File11=set0.png
+File12=share.png
+File13=starup.m4a
+File14=t0.png
+File15=t1.png
+File16=t2.png
+File17=t3.png
+File18=t4.png
+File19=t5.png
+File2=fail.m4a
+File20=tap.m4a
+File3=fail2.m4a
+File4=hit.m4a
+File5=leaderboard.png
+File6=like.png
+File7=menu.bjl
+File8=pause.png
+File9=retro.ttf
+FileGroup1=Default Group
+FileGroup10=Default Group
+FileGroup11=Default Group
+FileGroup12=Default Group
+FileGroup13=Default Group
+FileGroup14=Default Group
+FileGroup15=Default Group
+FileGroup16=Default Group
+FileGroup17=Default Group
+FileGroup18=Default Group
+FileGroup19=Default Group
+FileGroup2=Default Group
+FileGroup20=Default Group
+FileGroup3=Default Group
+FileGroup4=Default Group
+FileGroup5=Default Group
+FileGroup6=Default Group
+FileGroup7=Default Group
+FileGroup8=Default Group
+FileGroup9=Default Group
+Group=Default Group
+Library1=b4xpages
+Library2=cssutils
+Library3=jcore
+Library4=jfx
+Module1=|relative|..\B4XMainPage
+Module2=|relative|..\brick
+Module3=|relative|..\GamePage
+Module4=|relative|..\il_Atlas
+Module5=|relative|..\LevelEditorPage
+Module6=|relative|..\levels
+Module7=|relative|..\mp
+NumberOfFiles=20
+NumberOfLibraries=4
+NumberOfModules=7
+Version=9
+@EndOfDesignText@
+#Region Project Attributes 
+	#MainFormWidth: 840
+	#MainFormHeight: 420
+#End Region
+
+Sub Process_Globals
+	Private fx As JFX
+	Private MainForm As Form
+End Sub
+
+Sub AppStart (Form1 As Form, Args() As String) 'ignore
+	MainForm = Form1
+	MainForm.Show
+	MainForm.BackColor = fx.Colors.RGB(0,0,0)
+	#if b4j
+		MainForm.Resizable = False
+	#End If
+	MainForm.Title = "B(x)reakout"
+
+	Dim PagesManager As B4XPagesManager
+	PagesManager.Initialize(MainForm)
+End Sub
+
+'Template version: B4J-1.0
+#Region Delegates
+Sub MainForm_FocusChanged (HasFocus As Boolean)
+	B4XPages.Delegate.MainForm_FocusChanged(HasFocus)
+End Sub
+
+Sub MainForm_Resize (Width As Double, Height As Double)
+	B4XPages.Delegate.MainForm_Resize(Width, Height)
+End Sub
+
+Sub MainForm_Closed
+	B4XPages.Delegate.MainForm_Closed
+End Sub
+
+Sub MainForm_CloseRequest (EventData As Event)
+	B4XPages.Delegate.MainForm_CloseRequest(EventData)
+End Sub
+
+Public Sub MainForm_IconifiedChanged (Iconified As Boolean)
+	B4XPages.Delegate.MainForm_IconifiedChanged(Iconified)
+End Sub
+#End Region

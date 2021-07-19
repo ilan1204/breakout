@@ -1,0 +1,102 @@
+﻿Build1=free,www.breakout.com,free
+File1=exit.png
+File10=set0.pack
+File11=set0.png
+File12=share.png
+File13=starup.m4a
+File14=t0.png
+File15=t1.png
+File16=t2.png
+File17=t3.png
+File18=t4.png
+File19=t5.png
+File2=fail.m4a
+File20=tap.m4a
+File3=fail2.m4a
+File4=hit.m4a
+File5=leaderboard.png
+File6=like.png
+File7=menu.bil
+File8=pause.png
+File9=retro.ttf
+FileGroup1=Default Group
+FileGroup10=Default Group
+FileGroup11=Default Group
+FileGroup12=Default Group
+FileGroup13=Default Group
+FileGroup14=Default Group
+FileGroup15=Default Group
+FileGroup16=Default Group
+FileGroup17=Default Group
+FileGroup18=Default Group
+FileGroup19=Default Group
+FileGroup2=Default Group
+FileGroup20=Default Group
+FileGroup3=Default Group
+FileGroup4=Default Group
+FileGroup5=Default Group
+FileGroup6=Default Group
+FileGroup7=Default Group
+FileGroup8=Default Group
+FileGroup9=Default Group
+Group=Default Group
+Library1=b4xpages
+Library2=icore
+Module1=|relative|..\B4XMainPage
+Module2=|relative|..\brick
+Module3=|relative|..\GamePage
+Module4=|relative|..\il_Atlas
+Module5=|relative|..\LevelEditorPage
+Module6=|relative|..\levels
+Module7=|relative|..\mp
+NumberOfFiles=20
+NumberOfLibraries=2
+NumberOfModules=7
+Version=7.2
+@EndOfDesignText@
+'Code module
+#Region  Project Attributes 
+	#ApplicationLabel: B(x)reaktout
+	#Version: 0.1
+	'Orientation possible values: Portrait, LandscapeLeft, LandscapeRight and PortraitUpsideDown
+	#iPhoneOrientations: LandscapeLeft, LandscapeRight
+	#iPadOrientations: LandscapeLeft, LandscapeRight
+	#Target: iPhone, iPad
+	#ATSEnabled: False
+	#MinVersion: 8
+	#PlistExtra:<key>UIStatusBarStyle</key><string>UIStatusBarStyleLightContent</string>
+	#PlistExtra: <key>GADIsAdManagerApp</key><true/>
+	#AdditionalLib: libsqlite3.dylib
+	#AdditionalLib: libz.dylib
+	#AdditionalLib: WebKit.framework		
+	#AppFont: retro.ttf
+#End Region
+
+#if Free
+#CertificateFile: *.cer
+#ProvisionFile: *.mobileprovision
+#End If
+ 
+Sub Process_Globals
+	Public App As Application
+	Public NavControl As NavigationController
+End Sub
+
+Private Sub Application_Start (Nav As NavigationController)
+	NavControl = Nav
+	NavControl.ToolBarVisible = False
+	NavControl.NavigationBarVisible = False
+	Dim PagesManager As B4XPagesManager
+	PagesManager.Initialize(NavControl)
+End Sub
+
+'Template version: B4i-1.0
+#Region Delegates
+Private Sub Application_Background
+	B4XPages.Delegate.Activity_Pause
+End Sub
+
+Private Sub Application_Foreground
+	B4XPages.Delegate.Activity_Resume
+End Sub
+#End Region
