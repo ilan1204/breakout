@@ -1,10 +1,9 @@
 # breakout
-Full Breakout game for iOS, Android and Desktop
 
 B(x)reakout
 
-Simple breakout game that can run on iOS, Android and on any Desktop PC.
-It includes 10 levels and a build in level Editor.
+A full breakout game that runs on iOS, Android and any Desktop PC.
+It comes with 10 levels preinstalled and a build in level Editor.
 The idea of this project is to help new developers get into game making.
 It is written in B4X. You can go to www.b4x.com and download the relevant
 IDE's for free! (b4a + b4j only!)
