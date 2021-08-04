@@ -1,4 +1,4 @@
-# breakout
+# Breakout Game
 
 B(x)reakout
 
