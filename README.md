@@ -13,5 +13,7 @@ help you understand how games work.
 You can also download the Game in the App Store or Google Play and try it.
 Just search for Bxreakout.
 
+Thread link: https://www.b4x.com/android/forum/threads/breakout-game-free-game-source-b4j-b4i-b4a.131399/
+
 ![alt text](https://www.b4x.com/android/forum/attachments/b-png.115932/)
 
